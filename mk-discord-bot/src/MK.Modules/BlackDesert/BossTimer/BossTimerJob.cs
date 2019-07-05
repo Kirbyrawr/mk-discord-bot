@@ -23,8 +23,8 @@ namespace MK.Modules.BlackDesert.BossTimer
 
                     if (minutesLeft >= 0 && minutesLeft <= 20)
                     {
-                        int minutesFormatted = (int)minutesLeft;
-                        MKManager.GetInstance().GetModule<BossTimerModule>().SendMessage(boss.Key, minutesLeft, dateBoss, boss.Value.color);
+                        int minutesFormatted = (int)Math.Round(minutesLeft);
+                        MKManager.GetInstance().GetModule<BossTimerModule>().SendMessage(boss.Key, minutesFormatted, dateBoss, boss.Value.color);
                     }
                 }
             }

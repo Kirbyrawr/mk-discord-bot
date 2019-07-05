@@ -129,7 +129,7 @@ namespace MK.Modules.BlackDesert.BossTimer
             await sched.Start();
         }
 
-        public async void SendMessage(string bossName, double minutesLeft, DateTime bossTime, Color color)
+        public async void SendMessage(string bossName, int minutesLeft, DateTime bossTime, Color color)
         {
             ulong channelID = MKManager.GetInstance().GetModule<BossTimerModule>().Config.BossChannelID;
             SocketTextChannel channel = MKManager.GetInstance().client.GetChannel(channelID) as SocketTextChannel;
@@ -149,7 +149,7 @@ namespace MK.Modules.BlackDesert.BossTimer
             }
             else
             {
-                embedBuilder.AddField($"Will appear in {minutesLeft}!", $"Spawn at {bossTime.Hour}:{bossTime.Minute}", false);
+                embedBuilder.AddField($"Will appear in {minutesLeft} minutes!", $"Spawn at {bossTime.Hour}:{bossTime.Minute}", false);
             }
 
             //Image
