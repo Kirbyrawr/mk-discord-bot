@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kirby\\workspace\\mk-discord-bot\\mk-discord-bot\\mk-discord-bot.csproj": {}
+    "C:\\Users\\kirby\\workspace\\mk-discord-bot-test\\mk-discord-bot\\mk-discord-bot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kirby\\workspace\\mk-discord-bot\\mk-discord-bot\\mk-discord-bot.csproj": {
+    "C:\\Users\\kirby\\workspace\\mk-discord-bot-test\\mk-discord-bot\\mk-discord-bot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kirby\\workspace\\mk-discord-bot\\mk-discord-bot\\mk-discord-bot.csproj",
+        "projectUniqueName": "C:\\Users\\kirby\\workspace\\mk-discord-bot-test\\mk-discord-bot\\mk-discord-bot.csproj",
         "projectName": "mk-discord-bot",
-        "projectPath": "C:\\Users\\kirby\\workspace\\mk-discord-bot\\mk-discord-bot\\mk-discord-bot.csproj",
+        "projectPath": "C:\\Users\\kirby\\workspace\\mk-discord-bot-test\\mk-discord-bot\\mk-discord-bot.csproj",
         "packagesPath": "C:\\Users\\kirby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kirby\\workspace\\mk-discord-bot\\mk-discord-bot\\obj\\",
+        "outputPath": "C:\\Users\\kirby\\workspace\\mk-discord-bot-test\\mk-discord-bot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -69,6 +69,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.2, )"
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.0.7, )"
             }
           },
           "imports": [

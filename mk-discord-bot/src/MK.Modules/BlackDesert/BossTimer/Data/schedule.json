@@ -1,0 +1,346 @@
+{
+  "bosses": [
+    {
+      "name": "Garmoth",
+      "color": "242BA5",
+      "times": {
+        "Monday": {
+          "hours": []
+        },
+        "Tuesday": {
+          "hours": [
+            "22:15"
+          ]
+        },
+        "Wednesday": {
+          "hours": []
+        },
+        "Thursday": {
+          "hours": [
+            "22:15"
+          ]
+        },
+        "Friday": {
+          "hours": []
+        },
+        "Saturday": {
+          "hours": []
+        },
+        "Sunday": {
+          "hours": []
+        }
+      }
+    },
+    {
+      "name": "Karanda",
+      "color": "E0E3DF",
+      "times": {
+        "Monday": {
+          "hours": [
+            "00:15",
+            "02:00"
+          ]
+        },
+        "Tuesday": {
+          "hours": [
+            "00:15",
+            "19:00"
+          ]
+        },
+        "Wednesday": {
+          "hours": [
+            "02:00",
+            "09:00",
+            "22:15"
+          ]
+        },
+        "Thursday": {
+          "hours": []
+        },
+        "Friday": {
+          "hours": [
+            "00:15",
+            "05:00",
+            "12:00"
+          ]
+        },
+        "Saturday": {
+          "hours": [
+            "00:15",
+            "19:00"
+          ]
+        },
+        "Sunday": {
+          "hours": []
+        }
+      }
+    },
+    {
+      "name": "Kutum",
+      "color": "76ADB5",
+      "times": {
+        "Monday": {
+          "hours": [
+            "00:15",
+            "16:00"
+          ]
+        },
+        "Tuesday": {
+          "hours": [
+            "02:00",
+            "12:00"
+          ]
+        },
+        "Wednesday": {
+          "hours": [
+            "00:15",
+            "16:00"
+          ]
+        },
+        "Thursday": {
+          "hours": [
+            "02:00",
+            "09:00",
+            "19:00"
+          ]
+        },
+        "Friday": {
+          "hours": [
+            "09:00",
+            "22:15"
+          ]
+        },
+        "Saturday": {
+          "hours": [
+            "09:00"
+          ]
+        },
+        "Sunday": {
+          "hours": [
+            "00:15",
+            "05:00"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Kzarka",
+      "color": "6C77A2",
+      "times": {
+        "Monday": {
+          "hours": [
+            "05:00",
+            "22:15"
+          ]
+        },
+        "Tuesday": {
+          "hours": [
+            "05:00"
+          ]
+        },
+        "Wednesday": {
+          "hours": [
+            "00:15",
+            "05:00",
+            "22:15"
+          ]
+        },
+        "Thursday": {
+          "hours": [
+            "09:00",
+            "16:00"
+          ]
+        },
+        "Friday": {
+          "hours": [
+            "00:15",
+            "19:00",
+            "22:15"
+          ]
+        },
+        "Saturday": {
+          "hours": [
+            "19:00"
+          ]
+        },
+        "Sunday": {
+          "hours": [
+            "02:00",
+            "12:00",
+            "22:15"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Muraka",
+      "color": "303640",
+      "times": {
+        "Monday": {
+          "hours": []
+        },
+        "Tuesday": {
+          "hours": []
+        },
+        "Wednesday": {
+          "hours": [
+            "23:15"
+          ]
+        },
+        "Thursday": {
+          "hours": []
+        },
+        "Friday": {
+          "hours": []
+        },
+        "Saturday": {
+          "hours": [
+            "16:00"
+          ]
+        },
+        "Sunday": {
+          "hours": []
+        }
+      }
+    },
+    {
+      "name": "Nouver",
+      "color": "151E47",
+      "times": {
+        "Monday": {
+          "hours": [
+            "19:00"
+          ]
+        },
+        "Tuesday": {
+          "hours": [
+            "09:00",
+            "16:00"
+          ]
+        },
+        "Wednesday": {
+          "hours": []
+        },
+        "Thursday": {
+          "hours": [
+            "00:15",
+            "05:00",
+            "12:00"
+          ]
+        },
+        "Friday": {
+          "hours": [
+            "02:00",
+            "16:00"
+          ]
+        },
+        "Saturday": {
+          "hours": [
+            "05:00",
+            "12:00"
+          ]
+        },
+        "Sunday": {
+          "hours": [
+            "00:15",
+            "09:00",
+            "22:15"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Offin",
+      "color": "537383",
+      "times": {
+        "Monday": {
+          "hours": [
+            "12:00"
+          ]
+        },
+        "Tuesday": {
+          "hours": []
+        },
+        "Wednesday": {
+          "hours": [
+            "19:00"
+          ]
+        },
+        "Thursday": {
+          "hours": []
+        },
+        "Friday": {
+          "hours": []
+        },
+        "Saturday": {
+          "hours": [
+            "02:00"
+          ]
+        },
+        "Sunday": {
+          "hours": []
+        }
+      }
+    },
+    {
+      "name": "Quint",
+      "color": "59524F",
+      "times": {
+        "Monday": {
+          "hours": []
+        },
+        "Tuesday": {
+          "hours": []
+        },
+        "Wednesday": {
+          "hours": [
+            "23:15"
+          ]
+        },
+        "Thursday": {
+          "hours": []
+        },
+        "Friday": {
+          "hours": []
+        },
+        "Saturday": {
+          "hours": [
+            "16:00"
+          ]
+        },
+        "Sunday": {
+          "hours": []
+        }
+      }
+    },
+    {
+      "name": "Vell",
+      "color": "D7D038",
+      "times": {
+        "Monday": {
+          "hours": []
+        },
+        "Tuesday": {
+          "hours": []
+        },
+        "Wednesday": {
+          "hours": []
+        },
+        "Thursday": {
+          "hours": []
+        },
+        "Friday": {
+          "hours": []
+        },
+        "Saturday": {
+          "hours": []
+        },
+        "Sunday": {
+          "hours": [
+            "16:00"
+          ]
+        }
+      }
+    }
+  ]
+}
