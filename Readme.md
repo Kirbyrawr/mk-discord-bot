@@ -1,12 +1,16 @@
 # MK Discord Bot
 
-## Features:
+## Main Features:
  - Multiplatform (Works in PC, Mac, Linux, Raspberry Pi) [Mono is required]
  - Easy to customize.
  - Modular, use only the modules you want.
  - A growing library of modules for any purpose (Games, Languages, etc..)
  - Easy to setup, just build it with your config settings.
  - Apache License 2.0!
+
+## Modules Available
+### Black Desert Online
+- World Boss Timer
 
 ## Credits
 - Kirbyrawr -> MK Bot
