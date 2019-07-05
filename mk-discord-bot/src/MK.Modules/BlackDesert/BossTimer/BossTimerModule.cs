@@ -145,7 +145,7 @@ namespace MK.Modules.BlackDesert.BossTimer
             //Description
             if (minutesLeft == 0)
             {
-                embedBuilder.AddField($"Live!", "", false);
+                embedBuilder.AddField($"Live!", "May the RNG be with you!", false);
             }
             else
             {
