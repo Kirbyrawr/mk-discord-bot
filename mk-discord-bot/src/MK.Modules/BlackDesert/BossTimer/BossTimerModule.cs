@@ -11,6 +11,16 @@ using Newtonsoft.Json.Linq;
 using Quartz;
 using Quartz.Impl;
 
+
+/// <summary>
+/// Module that notify in a channel of the World Bosses spawn time.
+/// 
+/// Permissions:
+/// -Read Messages
+/// -Write Messages
+/// -Manage Messages
+/// -Attach files
+/// </summary>
 namespace MK.Modules.BlackDesert.BossTimer
 {
     public class BossTimerModule : MKModule
@@ -89,8 +99,8 @@ namespace MK.Modules.BlackDesert.BossTimer
                 }
 
                 //Set Color
-                uint colorValue = uint.Parse(boss.GetValue("color").ToString(), System.Globalization.NumberStyles.HexNumber);
-                settings.color = new Color(colorValue);
+                uint colorValue = uint.Parse(boss.GetValue("color").ToString().Replace("#", ""), System.Globalization.NumberStyles.HexNumber);
+                settings.color = new Color();
 
                 //Set Schedule
                 settings.schedule = dateTimes;
@@ -131,16 +141,14 @@ namespace MK.Modules.BlackDesert.BossTimer
 
         public async void EraseMessages()
         {
-            ulong channelID = MKManager.GetInstance().GetModule<BossTimerModule>().Config.BossChannelID;
-            SocketTextChannel channel = MKManager.GetInstance().client.GetChannel(channelID) as SocketTextChannel;
+            SocketTextChannel channel = MKManager.GetInstance().client.GetChannel(Config.BossChannelID) as SocketTextChannel;
             var messages = await channel.GetMessagesAsync().FlattenAsync();
             await channel.DeleteMessagesAsync(messages);
         }
 
         public async void SendMessage(string bossName, int minutesLeft, DateTime bossTime, Color color)
         {
-            ulong channelID = MKManager.GetInstance().GetModule<BossTimerModule>().Config.BossChannelID;
-            SocketTextChannel channel = MKManager.GetInstance().client.GetChannel(channelID) as SocketTextChannel;
+            SocketTextChannel channel = MKManager.GetInstance().client.GetChannel(Config.BossChannelID) as SocketTextChannel;
 
             EmbedBuilder embedBuilder = new EmbedBuilder();
 

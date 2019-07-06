@@ -40,7 +40,6 @@ namespace MK.Core
         {
             LoadConfig();
             CreateClient();
-            CreateModules();
         }
 
         private void LoadConfig()
@@ -95,6 +94,7 @@ namespace MK.Core
         private Task OnReady()
         {
             Log("Ready");
+            CreateModules();
             return Task.CompletedTask;
         }
 

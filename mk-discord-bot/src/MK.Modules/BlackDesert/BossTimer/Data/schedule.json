@@ -2,7 +2,7 @@
   "bosses": [
     {
       "name": "Garmoth",
-      "color": "242BA5",
+      "color": "#A42F29",
       "times": {
         "Monday": {
           "hours": []
@@ -33,7 +33,7 @@
     },
     {
       "name": "Karanda",
-      "color": "E0E3DF",
+      "color": "#E0E3DF",
       "times": {
         "Monday": {
           "hours": [
@@ -77,7 +77,7 @@
     },
     {
       "name": "Kutum",
-      "color": "76ADB5",
+      "color": "#D6D3A5",
       "times": {
         "Monday": {
           "hours": [
@@ -125,7 +125,7 @@
     },
     {
       "name": "Kzarka",
-      "color": "6C77A2",
+      "color": "#A77A6E",
       "times": {
         "Monday": {
           "hours": [
@@ -174,7 +174,7 @@
     },
     {
       "name": "Muraka",
-      "color": "303640",
+      "color": "#3E342D",
       "times": {
         "Monday": {
           "hours": []
@@ -205,7 +205,7 @@
     },
     {
       "name": "Nouver",
-      "color": "151E47",
+      "color": "#653528",
       "times": {
         "Monday": {
           "hours": [
@@ -251,7 +251,7 @@
     },
     {
       "name": "Offin",
-      "color": "537383",
+      "color": "#AA9D7C",
       "times": {
         "Monday": {
           "hours": [
@@ -284,7 +284,7 @@
     },
     {
       "name": "Quint",
-      "color": "59524F",
+      "color": "#4F5259",
       "times": {
         "Monday": {
           "hours": []
@@ -315,7 +315,7 @@
     },
     {
       "name": "Vell",
-      "color": "D7D038",
+      "color": "#35D9E1",
       "times": {
         "Monday": {
           "hours": []
