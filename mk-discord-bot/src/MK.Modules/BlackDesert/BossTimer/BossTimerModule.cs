@@ -149,7 +149,7 @@ namespace MK.Modules.BlackDesert.BossTimer
             }
             else
             {
-                embedBuilder.AddField($"Will appear in {minutesLeft} minutes!", $"Spawn at {bossTime.Hour}:{bossTime.Minute}", false);
+                embedBuilder.AddField($"Will appear in {minutesLeft} minutes!", $"Spawn at {DateTime.Now.ToString("HH:mm")}", false);
             }
 
             //Image
