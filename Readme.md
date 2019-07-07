@@ -1,7 +1,7 @@
 # MK Discord Bot
 
 ## Main Features:
- - Multiplatform (Works in PC, Mac, Linux, Raspberry Pi) [Mono is required]
+ - Multiplatform (Works in PC, Mac, Linux, Raspberry Pi)
  - Easy to customize.
  - Modular, use only the modules you want.
  - A growing library of modules for any purpose (Games, Languages, etc..)
