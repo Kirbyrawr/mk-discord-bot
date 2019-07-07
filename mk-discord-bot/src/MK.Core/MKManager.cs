@@ -17,6 +17,7 @@ namespace MK.Core
         private static MKManager _instance;
         private MKConfig _config;
         private Dictionary<Type, MKModule> _modules;
+        private bool _modulesCreated;
 
         public MKManager()
         {
@@ -38,8 +39,23 @@ namespace MK.Core
         //Setup
         private void Setup()
         {
+            SetupLog();
             LoadConfig();
             CreateClient();
+        }
+
+        private void SetupLog()
+        {
+            //Make a copy of the previous log.
+            if (File.Exists("Log.txt"))
+            {
+                File.Copy("Log.txt", "LastLog.txt", true);
+                File.WriteAllText("Log.txt", "");
+            }
+            else
+            {
+                File.Create("Log.txt").Close();
+            }
         }
 
         private void LoadConfig()
@@ -68,7 +84,9 @@ namespace MK.Core
         //Modules
         private void CreateModules()
         {
-            Log("Creating Modules");
+            if(_modulesCreated) { return; }
+
+            Log("Create Modules");
 
             _modules = new Dictionary<Type, MKModule>();
 
@@ -82,6 +100,8 @@ namespace MK.Core
                     _modules.Add(t, module);
                 }
             }
+
+            _modulesCreated = true;
         }
 
         public T GetModule<T>() where T : MKModule
@@ -109,6 +129,9 @@ namespace MK.Core
         {
             string log = $"[MK Core] - {message}";
             Console.WriteLine(log);
+
+            //Write to log file.
+            File.AppendAllText("Log.txt", $"[{DateTime.Now}] {message}{Environment.NewLine}");
         }
     }
 }

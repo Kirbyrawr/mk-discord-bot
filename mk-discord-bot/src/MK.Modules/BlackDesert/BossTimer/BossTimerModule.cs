@@ -62,21 +62,21 @@ namespace MK.Modules.BlackDesert.BossTimer
 
         private void GetConfigJSON()
         {
-            Log("Getting Config JSON");
+            Log("Get Config JSON");
             string configJSON = File.ReadAllText("src/MK.Modules/BlackDesert/BossTimer/Data/config.json");
             Config = JsonConvert.DeserializeObject<BossTimerConfig>(configJSON);
         }
 
         private void GetScheduleJSON()
         {
-            Log("Getting Schedule JSON");
+            Log("Get Schedule JSON");
             string scheduleJSON = File.ReadAllText("src/MK.Modules/BlackDesert/BossTimer/Data/schedule.json");
             _scheduleJSON = JObject.Parse(scheduleJSON);
         }
 
         private void ParseJSON()
         {
-            Log("Parsing JSON");
+            Log("Parse JSON");
 
             _bossTimes = new Dictionary<string, Settings>();
             foreach (JObject boss in _scheduleJSON.GetValue("bosses").Children<JObject>())
@@ -111,7 +111,7 @@ namespace MK.Modules.BlackDesert.BossTimer
 
         protected override async Task Run()
         {
-            Log("Creating Cron Job");
+            Log("Create Scheduler");
 
             //Create Scheduler
             ISchedulerFactory sf = new StdSchedulerFactory();
@@ -137,6 +137,8 @@ namespace MK.Modules.BlackDesert.BossTimer
 
             // Start Scheduler
             await sched.Start();
+
+            Log("Ready");
         }
 
         public async void EraseMessages()
